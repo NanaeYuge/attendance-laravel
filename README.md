@@ -41,7 +41,6 @@ DB_USERNAME=root
 DB_PASSWORD=password`
 
 ### 3. コンテナの起動
-コードをコピーする
 `docker compose up -d`
 
 ### 4. 依存関係のインストール
@@ -58,6 +57,7 @@ DB_PASSWORD=password`
 
 管理者用: http://localhost/admin/login
 
+---
 
 ##ログイン情報
 | ロール |	メールアドレス	| パスワード |
