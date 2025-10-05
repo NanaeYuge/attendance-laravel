@@ -70,7 +70,7 @@ DB_PASSWORD=password`
 MailHogを使用して確認できます。
 URL: http://localhost:8025
 
-##　ディレクトリ構成（主要）
+## ディレクトリ構成（主要）
 
 ```bash
 app/
@@ -90,9 +90,9 @@ resources/
 routes/
  └── web.php
 ```
-###　主な機能
+### 主な機能
 
-####　一般ユーザー側
+#### 一般ユーザー側
 
 勤怠登録（出勤・退勤・休憩開始・休憩終了）
 
@@ -102,7 +102,7 @@ routes/
 
 メール認証機能（Fortify使用）
 
-####　管理者側
+#### 管理者側
 
 スタッフ一覧表示
 
@@ -114,7 +114,7 @@ CSVエクスポート（検索結果対応）
 
 詳細モーダル表示・削除機能
 
-##　画面一覧
+## 画面一覧
 
 画面名	対応ビュー	備考
 会員登録画面	resources/views/auth/register.blade.php	一般ユーザー新規登録
@@ -129,13 +129,13 @@ CSVエクスポート（検索結果対応）
 修正申請承認画面	resources/views/admin/requests.blade.php	承認・却下ボタンあり
 スタッフ別勤怠一覧	resources/views/admin/staff-attendance.blade.php	モーダル詳細表示対応
 
-##　備考
+## 備考
 
 429 Too Many Requests が発生した場合
 Laravel Fortify では、ログイン試行の制限がかかると「429 Too Many Requests」エラーが表示されます。
 これは短時間に複数回ログインを試行したことによるレートリミットです。
 
-###　対処方法
+### 対処方法
 
 数分待ってから再度ログインしてください。（通常は1分程度で解除されます）
 
@@ -147,7 +147,7 @@ docker compose exec php php artisan config:clear
 docker compose exec php php artisan route:clear
 ```
 
-##　ライセンス
+## ライセンス
 
 このプロジェクトは学習およびポートフォリオ目的で作成されました。
 著作権は開発者に帰属します。
