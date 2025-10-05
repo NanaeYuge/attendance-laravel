@@ -1,6 +1,4 @@
-# attendance-laravel
-
-# 勤怠管理２
+# 勤怠管理アプリ
 
 ## 概要
 本アプリケーションは、一般ユーザーと管理者の2種類の権限を持つ勤怠管理システムです。  
@@ -26,11 +24,9 @@ Laravel Fortifyを用いた認証機能を実装し、Docker環境上で動作�
 ## 環境構築手順
 
 ### 1. リポジトリのクローン
-```bash
 git clone https://github.com/yourname/attendance-laravel.git
 cd attendance-laravel
-2. 環境変数ファイルの作成
-bash
+### 2. 環境変数ファイルの作成
 コードをコピーする
 cp .env.example .env
 .env 内の設定を確認・編集してください。
@@ -44,26 +40,26 @@ DB_PORT=3306
 DB_DATABASE=attendance
 DB_USERNAME=root
 DB_PASSWORD=password
-3. コンテナの起動
-bash
+### 3. コンテナの起動
 コードをコピーする
 docker compose up -d
-4. 依存関係のインストール
+### 4. 依存関係のインストール
 bash
 コードをコピーする
 docker compose exec php composer install
-5. アプリケーションキーの生成
+### 5. アプリケーションキーの生成
 bash
 コードをコピーする
 docker compose exec php php artisan key:generate
-6. マイグレーションとシーディングの実行
-bash
+### 6. マイグレーションとシーディングの実行
 コードをコピーする
 docker compose exec php php artisan migrate --seed
-7. ブラウザでアクセス
+### 7. ブラウザでアクセス
 一般ユーザー用: http://localhost/login
 
 管理者用: http://localhost/admin/login
+
+```
 
 ログイン情報
 ロール	メールアドレス	パスワード
