@@ -57,17 +57,14 @@ DB_PASSWORD=password`
 
 管理者用: http://localhost/admin/login
 
----
+## ログイン情報
 
-##　ログイン情報
-
-| ロール |	メールアドレス	| パスワード |
-| 管理者	|admin@example.com	| password |
-| 一般ユーザー1 |taro@example.com	| password |
-|一般ユーザー2	| hanako@example.com |	password |
-|一般ユーザー3	| jiro@example.com |	password |
-
----
+| ロール | メールアドレス | パスワード |
+|:--|:--|:--|
+| 管理者 | admin@example.com | password |
+| 一般ユーザー1 | taro@example.com | password |
+| 一般ユーザー2 | hanako@example.com | password |
+| 一般ユーザー3 | jiro@example.com | password |
 
 一般ユーザーは初回ログイン後、メール認証が必要です。
 MailHogを使用して確認できます。
