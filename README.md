@@ -11,9 +11,9 @@ Laravel Fortifyを用いた認証機能を実装し、Docker環境上で動作�
 
 | 分類 | 内容 |
 |------|------|
-| 言語 | PHP 8.x |
-| フレームワーク | Laravel 10.x |
-| データベース | MySQL 8.x |
+| 言語 | PHP 8.1.32 |
+| フレームワーク | Laravel 10.49.0 |
+| データベース | MySQL 8.0.43 |
 | 開発環境 | Docker / Docker Compose |
 | 認証 | Laravel Fortify |
 | メールテスト | MailHog |
