@@ -1,0 +1,177 @@
+:root {
+    --black: #000;
+    --bg: #F1F1F3;
+    --text: #111;
+    --radius: 10px;
+}
+
+body.role-staff .page-main,
+.page-main {
+    background: var(--bg);
+}
+
+.stamp-screen {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 48px 16px;
+}
+
+.stamp-viewport {
+    width: min(920px, 92vw);
+    min-height: 600px;
+    margin-top: 24px;
+    text-align: center;
+    position: relative;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    color: var(--text);
+}
+
+.alert {
+    width: min(920px, 92vw);
+    margin: 0 auto 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.alert.success {
+    background: #E6FFED;
+    color: #05630E;
+}
+
+.alert.error {
+    background: #FFE8E8;
+    color: #9B1111;
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 6px 12px;
+    background: #E9E9ED;
+    color: #333;
+}
+
+.chip--status {
+
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    line-height: 1;
+    position: relative;
+    top: 0;
+    margin: 40px 0 24px;
+}
+
+.stamp-date {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 0;
+    margin: 6px 0 24px;
+    color: var(--black);
+}
+
+
+.stamp-time {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1;
+    letter-spacing: 0;
+    margin: 8px 0 40px;
+    color: var(--black);
+}
+
+
+.stamp-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    min-width: 160px;
+    border-radius: 8px;
+    background: #EDEDED;
+    color: #111;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border: none;
+    cursor: pointer;
+    transition: transform .02s ease, filter .2s ease;
+}
+
+.btn:hover {
+    filter: brightness(.98);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn--primary {
+    background: #000;
+    color: #fff;
+}
+
+.btn--danger {
+    background: #D92D20;
+    color: #fff;
+}
+
+
+.btn--xl {
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0.15em;
+    padding: 18px 46px;
+    min-width: 240px;
+}
+
+
+.done-text {
+    margin: 16px 0;
+    font-weight: 700;
+}
+
+
+.link-row {
+    margin-top: 24px;
+}
+
+.link-row a {
+    text-decoration: underline;
+    color: #444;
+    font-weight: 600;
+}
+
+
+@media (max-width: 600px) {
+    .chip--status {
+        font-size: 16px;
+    }
+
+    .stamp-date {
+        font-size: 28px;
+    }
+
+    .stamp-time {
+        font-size: 56px;
+    }
+
+    .btn--xl {
+        font-size: 26px;
+        min-width: 200px;
+        padding: 16px 32px;
+    }
+}

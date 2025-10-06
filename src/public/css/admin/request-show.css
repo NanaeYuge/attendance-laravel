@@ -1,0 +1,280 @@
+/* tokens */
+:root {
+    --surface: #F2F4F7;
+    --card: #FFFFFF;
+    --line: #E5E7EB;
+    --text: #101828;
+    --muted: #667085;
+    --accent: #111827;
+    --black: #000;
+    --blackHover: #111;
+}
+
+.admin-main {
+    background: var(--surface);
+}
+
+.request-show {
+    width: 900px;
+    margin: 93px auto 64px;
+    box-sizing: border-box;
+}
+
+.page-title {
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 0 55px;
+    padding-left: 16px;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text);
+    position: relative;
+}
+
+.page-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 4px;
+    height: 28px;
+    border-radius: 2px;
+    background: var(--accent);
+}
+
+.table-card {
+    width: 900px;
+    min-height: 555px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.detail-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+.detail-table tr {
+    background: #fff;
+}
+
+.detail-table th,
+.detail-table td {
+    padding: 24px 28px;
+    border-bottom: 1px solid var(--line);
+    color: var(--text);
+}
+
+.detail-table tbody tr:last-child th,
+.detail-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.detail-table th {
+    width: 22%;
+    font-weight: 700;
+    color: #1F2937;
+    text-align: left;
+}
+
+.detail-table td {
+    width: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.tilde {
+    color: #111;
+    font-weight: 700;
+}
+
+.pill {
+    display: inline-block;
+    min-width: 86px;
+    padding: 6px 12px;
+    border: 1px solid #D0D5DD;
+    border-radius: 6px;
+    background: #fff;
+    font-weight: 700;
+    letter-spacing: .04em;
+}
+
+.mono {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+}
+
+.note-box {
+    min-height: 72px;
+    border: 1px solid #D0D5DD;
+    border-radius: 6px;
+    background: #fff;
+    padding: 10px 12px;
+    white-space: pre-wrap;
+    line-height: 1.6;
+    color: #111;
+}
+
+.actions {
+    width: 900px;
+    margin: 56px auto 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-approve {
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: var(--black);
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: .08em;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans JP", Meiryo, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1;
+    letter-spacing: 0.15em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-approve:hover {
+    background: var(--blackHover);
+}
+
+.approved-msg {
+    color: #111;
+    font-weight: 700;
+}
+
+@media (max-width: 960px) {
+    .request-show {
+        width: auto;
+        margin: 72px 16px 48px;
+    }
+
+    .table-card,
+    .actions {
+        width: 100%;
+    }
+}
+
+.actions.actions--approved {
+    width: 900px;
+    margin: 24px auto 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.badge-approved {
+    display: inline-flex;
+    align-items: center;
+    height: 34px;
+    padding: 0 14px;
+    border-radius: 6px;
+    background: #E5E7EB;
+    color: #111;
+    font-weight: 800;
+    letter-spacing: .06em;
+    line-height: 1;
+    user-select: none;
+}
+
+@media (max-width: 960px) {
+    .request-show {
+        margin: 72px auto 48px;
+        padding: 0 16px;
+    }
+
+    .table-card {
+        min-height: unset;
+    }
+
+    /* 行数に任せる */
+    .detail-table th,
+    .detail-table td {
+        padding: 18px 16px;
+    }
+
+    .pill {
+        min-width: 72px;
+        padding: 6px 10px;
+    }
+
+    .actions {
+        margin-top: 28px;
+    }
+
+    .btn-approve {
+        width: 120px;
+        height: 46px;
+    }
+
+    .badge-approved {
+        height: 32px;
+        padding: 0 12px;
+    }
+}
+
+@media (max-width: 560px) {
+    .page-title {
+        width: auto;
+        height: auto;
+        line-height: 1.2;
+        margin-bottom: 32px;
+        font-size: 22px;
+    }
+
+    .page-title::before {
+        top: 2px;
+        height: 24px;
+    }
+
+    .detail-table {
+        font-size: 14px;
+    }
+
+    .detail-table th {
+        width: 30%;
+    }
+
+    .pill {
+        min-width: 64px;
+        padding: 5px 8px;
+    }
+
+    .note-box {
+        min-height: 56px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .detail-table th,
+    .detail-table td {
+        padding: 14px 12px;
+    }
+
+    .pill {
+        min-width: 56px;
+        padding: 4px 6px;
+    }
+
+    .btn-approve {
+        width: 112px;
+        height: 44px;
+    }
+}

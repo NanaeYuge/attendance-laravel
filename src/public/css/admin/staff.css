@@ -1,0 +1,119 @@
+:root {
+    --surface: #F2F4F7;
+    --card: #FFFFFF;
+    --line: #E5E7EB;
+    --text: #101828;
+    --accent: #111827;
+}
+
+.admin-main {
+    background: var(--surface);
+}
+
+.staff {
+    width: 900px;
+    margin: 126px auto 64px;
+    box-sizing: border-box;
+}
+
+.page-title {
+    width: 180px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 0 98px;
+    padding-left: 16px;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text);
+    position: relative;
+}
+
+.page-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 4px;
+    height: 28px;
+    border-radius: 2px;
+    background: var(--accent);
+}
+
+.table-card.staff-card {
+    width: 900px;
+    min-height: 317px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.staff-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+.staff-table thead th {
+    height: 48px;
+    background: #F8FAFC;
+    border-bottom: 1px solid var(--line);
+    font-weight: 700;
+    color: #111;
+}
+
+.staff-table th,
+.staff-table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--line);
+    text-align: center;
+    color: var(--text);
+}
+
+.staff-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.staff-table .col-id {
+    display: none;
+}
+
+.col-name {
+    text-align: left;
+    width: 40%;
+}
+
+.mono {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+}
+
+.link-detail {
+    color: #111;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.link-detail:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 960px) {
+    .staff {
+        width: auto;
+        margin: 96px 16px 48px;
+    }
+
+    .table-card.staff-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 760px) {
+    .page-title {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,14 @@
+/vendor/
+/node_modules/
+.env
+.env.*
+/public/storage
+/storage/*.key
+/storage/logs/
+/storage/framework/
+!/storage/app/public
+/src/.env
+/src/.env.*
+
+/docker/mysql/data/
+.DS_Store

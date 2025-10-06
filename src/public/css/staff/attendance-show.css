@@ -1,0 +1,279 @@
+.page-title {
+    position: relative;
+    padding-left: 48px;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0;
+    margin: 24px 0 20px;
+}
+
+.page-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 40px;
+    background: #000;
+}
+
+.page-attendance-show {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.alert {
+    width: 100%;
+    max-width: 900px;
+    background: #eef6ff;
+    color: #094067;
+    border: 1px solid #d5e9ff;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.card {
+    width: 900px;
+    min-height: 555px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .04);
+    border: 0;
+}
+
+.card-row {
+    display: flex;
+    min-height: 72px;
+    border-top: 1px solid #eee;
+}
+
+.card-row:first-child {
+    border-top: none;
+}
+
+.card-row--last {
+    min-height: 120px;
+}
+
+.th {
+    width: 220px;
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(115, 115, 115, 1);
+    background-color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.15em;
+    border-right: 1px solid #eee;
+}
+
+.td {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.15em;
+    color: #000;
+    background: transparent;
+}
+
+.td--center {
+    justify-content: center;
+}
+
+.td--date {
+    justify-content: center;
+    gap: 48px;
+}
+
+.date-y,
+.date-md {
+    font-size: 18px;
+}
+
+.td--range {
+    justify-content: center;
+}
+
+.name-value {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.15em;
+}
+
+.time-input {
+    width: 120px;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    background: #fbfbfb;
+    font-size: 16px;
+    letter-spacing: normal;
+    font-weight: 500;
+}
+
+.tilde {
+    margin: 0 10px;
+    color: #555;
+}
+
+.note-input {
+    width: 100%;
+    min-height: 64px;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
+    background: #fbfbfb;
+    color: #111;
+    letter-spacing: normal;
+    font-weight: 500;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 24px 28px;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 130px;
+    height: 50px;
+    border-radius: 8px;
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.link-row {
+    width: 900px;
+    margin: 16px 0 0;
+    text-align: left;
+}
+
+.link-row a {
+    text-decoration: underline;
+    color: #111;
+}
+
+@media (max-width: 1024px) {
+
+    .card,
+    .link-row {
+        width: 90vw;
+    }
+
+    .th {
+        width: 200px;
+        min-width: 200px;
+    }
+
+    .time-input {
+        width: 110px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 24px;
+    }
+
+    .th {
+        width: 160px;
+        min-width: 160px;
+    }
+
+    .td {
+        padding: 12px 16px;
+    }
+
+    .td--date {
+        gap: 24px;
+    }
+
+    .time-input {
+        width: 110px;
+    }
+
+    .actions {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 22px;
+        padding-left: 40px;
+    }
+
+    .page-title::before {
+        height: 32px;
+        width: 6px;
+    }
+
+    .card-row {
+        flex-direction: column;
+    }
+
+    .th {
+        width: auto;
+        min-width: 0;
+        border-right: none;
+        justify-content: flex-start;
+        padding: 12px 16px;
+    }
+
+    .td {
+        padding: 12px 16px;
+        justify-content: flex-start;
+    }
+
+    .td--date {
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .actions {
+        justify-content: stretch;
+        padding: 16px;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+
+    .link-row {
+        width: 90vw;
+    }
+}

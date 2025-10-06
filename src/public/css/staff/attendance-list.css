@@ -1,0 +1,295 @@
+
+.page-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.month-nav {
+    width: 900px;
+    height: 60px;
+    border-radius: 10px;
+    background: #fff;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+.month-nav .nav-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: #111;
+    text-decoration: none;
+}
+
+.month-nav .current-month {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.table-wrap {
+    width: 900px;
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.attendance-table th,
+.attendance-table td {
+    text-align: center;
+    padding: 12px 8px;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+.attendance-table th {
+    background: #f8f8f8;
+    font-weight: 700;
+}
+
+.btn-detail {
+    color: #111;
+    text-decoration: underline;
+    font-size: 14px;
+}
+.page-attendance-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-header {
+    width: 100%;
+    max-width: 900px;
+    margin: 24px 0;
+}
+
+.page-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+
+.month-nav {
+    width: 100%;
+    max-width: 900px;
+    height: 60px;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    margin: 0 auto 24px;
+    padding: 0 16px;
+}
+
+.month-nav .nav-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: #111;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.month-nav .current-month {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.table-wrap {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    color: rgba(115, 115, 115, 1);
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 15%;
+}
+
+.attendance-table th,
+.attendance-table td {
+    text-align: center;
+    padding: 12px 8px;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+    color: rgba(115, 115, 115, 1);
+}
+
+.attendance-table th {
+    background: #f8f8f8;
+    font-weight: 700;
+}
+
+.btn-detail {
+    color: #111;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    .page-title {
+        font-size: 26px;
+    }
+
+    .month-nav {
+        height: 56px;
+        gap: 32px;
+    }
+
+    .month-nav .current-month {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .month-nav {
+        height: 52px;
+        gap: 20px;
+        border-radius: 8px;
+    }
+
+    .month-nav .nav-link {
+        font-size: 14px;
+        letter-spacing: 0.12em;
+    }
+
+    .month-nav .current-month {
+        font-size: 16px;
+    }
+
+    .table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .attendance-table {
+        min-width: 640px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .month-nav {
+        justify-content: space-between;
+        gap: 8px;
+        padding: 0 12px;
+    }
+
+    .month-nav .current-month {
+        margin: 0 auto;
+        order: 2;
+    }
+
+    .month-nav .nav-link:first-child {
+        order: 1;
+    }
+
+    .month-nav .nav-link:last-child {
+        order: 3;
+    }
+
+    .attendance-table th,
+    .attendance-table td {
+        padding: 10px 6px;
+        font-size: 13px;
+    }
+}
+
+.page-title {
+    position: relative;
+    padding-left: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.page-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 40px;
+    background: #000;
+}
+
+.month-nav {
+    width: 100%;
+    max-width: 900px;
+    height: 60px;
+    border-radius: 10px;
+    background: #fff;
+    margin: 0 auto 32px;
+    padding: 0 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.month-nav .nav-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: rgba(115, 115, 115, 1);
+    padding: 6px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.month-nav .current-month {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.current-month {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.current-month .icon-calendar {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    display: block;
+}

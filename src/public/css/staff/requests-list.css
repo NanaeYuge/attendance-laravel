@@ -1,0 +1,136 @@
+.page-requests {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.page-title {
+    position: relative;
+    padding-left: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 24px 0 20px
+}
+
+.page-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 40px;
+    background: #000
+}
+
+.tab-nav {
+    width: 900px;
+    display: flex;
+    gap: 40px;
+    margin: 6px 0 8px
+}
+
+.tab-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    letter-spacing: .15em;
+    text-decoration: none;
+    color: #000;
+    opacity: .6;
+    font-weight: 400;
+    padding: 8px 0
+}
+
+.tab-link.is-active {
+    font-weight: 700;
+    opacity: 1
+}
+
+.tab-sep {
+    width: 900px;
+    height: 1px;
+    background: #cfcfcf;
+    margin-bottom: 16px
+}
+
+.table-wrap {
+    width: 900px
+}
+
+.requests-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+.requests-table th,
+.requests-table td {
+    padding: 14px 12px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px
+}
+
+.requests-table thead th {
+    background: #f7f7f7;
+    font-weight: 700
+}
+
+.link-detail {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: .15em;
+    color: #000;
+    text-decoration: underline
+}
+
+.empty {
+    padding: 28px 0;
+    text-align: center
+}
+
+@media (max-width:1024px) {
+
+    .tab-nav,
+    .tab-sep,
+    .table-wrap {
+        width: 90vw
+    }
+}
+
+@media (max-width:768px) {
+    .page-title {
+        font-size: 26px
+    }
+
+    .tab-nav {
+        gap: 24px
+    }
+}
+
+@media (max-width:640px) {
+    .page-title {
+        font-size: 22px;
+        padding-left: 40px
+    }
+
+    .page-title::before {
+        height: 32px;
+        width: 6px
+    }
+
+    .table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch
+    }
+
+    .requests-table {
+        min-width: 640px
+    }
+}
