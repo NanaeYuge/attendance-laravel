@@ -28,7 +28,7 @@ Laravel Fortifyを用いた認証機能を実装し、Docker環境上で動作�
 cd attendance-laravel`
 
 ### 2. 環境変数ファイルの作成
-```bash
+`
 cp src/.env.example src/.env
 .env 内の設定を確認・編集してください。
 特に以下を確認します。
